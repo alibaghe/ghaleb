@@ -1,0 +1,137 @@
+
+body{
+    margin-top: 50px !important;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+a:hover, a:focus{
+    text-decoration: none !important;
+    outline: none !important;
+    
+}
+.panel-group .panel{
+    background-color: #fff;
+    border:none;
+    box-shadow:none;
+    border-radius: 10px;
+    margin-bottom:11px;
+}
+.panel .panel-heading{
+    padding: 0;
+    border-radius:10px;
+    border: none;
+}
+.panel-heading a{
+    color:#816d6d !important;
+    display: block;
+    border:none;
+    padding:20px 35px 20px;
+    font-size: 20px;
+    background-color:#fff;
+    font-weight:600;
+    position: relative;
+    color:#fff;
+    box-shadow:none;
+    transition:all 0.1s ease 0;
+}
+.panel-heading a:after, .panel-heading a.collapsed:after{
+    content: "\f068";
+    font-family: fontawesome;
+    text-align: center;
+    position: absolute;
+    left:-20px;
+    top: 10px;
+    color:#816d6d !important;
+    background-color:#fff;
+    border: 5px solid #fff;
+    font-size: 15px;
+    width: 40px;
+    height:40px;
+    line-height: 30px;
+    border-radius: 50%;
+    transition:all 0.3s ease 0s;
+}
+.panel-heading:hover a:after,
+.panel-heading:hover a.collapsed:after{
+    transform:rotate(360deg);
+}
+.panel-heading a.collapsed:after{
+    content: "\f067";
+}
+#accordion .panel-body{
+    background-color:#fbf8f8;
+    color:#8C8C8C;
+    line-height: 25px;
+    padding: 10px 25px 20px 35px ;
+    border-top:none;
+    font-size:14px;
+    position: relative;
+}
+.text-white{
+    color:white;
+    text-transform: uppercase;
+}
+[data-toggle="collapse"] i:before {  
+  content: "\f068";
+}
+
+[data-toggle="collapse"].collapsed i:before {
+  content: "\f067";
+}
+
+  .card-header{
+      margin-bottom: 8px;
+  }
+  .accordion-title{
+      position: relative;
+      display: block;
+      padding:8px 0 8px 50px;
+      background: #213744;
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      width: 100%;
+      text-align: left;
+      transition: all .4s ease-in-out; 
+  }
+      i{
+          position: absolute;
+          width: 40px;
+          height: 100%;
+          left: 0;
+          top: 0;
+          color: #fff;
+          background: radial-gradient(rgba(#213744, .8), #213744);
+          text-align: center;
+          border-right: 1px solid transparent;
+      }
+
+          i {
+              border-right: 1px solid #fff;
+          }
+
+  .accordion-body{
+      padding: 40px 55px;
+  }
+      
+      ul {
+          list-style: none;
+          margin-left: 0;
+          padding-left: 0;
+      }
+      
+      li {
+          padding-left: 1.2rem;
+          text-indent: -1.2rem;
+      }
+          .before {
+              content: "\f10a";
+              padding-right: 5px;
+              font-family: "Flaticon";
+              font-size: 16px;
+              font-style: normal;
+              color: #213744;
+          }
+      
